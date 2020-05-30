@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Web movie helper'),
+      home: const MyHomePage(title: 'Web movie helper'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -43,9 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               TextField(
                 controller: textEditingControllerVid,
-                decoration: InputDecoration(
+                decoration: const  InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Movie Id',
+                  labelText: 'Search Request',
                 ),
               ),
             ],
