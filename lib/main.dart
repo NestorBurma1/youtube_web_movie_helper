@@ -8,12 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Web movie helper',
+      title: 'Web movie.dart helper',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(title: 'Web movie helper'),
+      home: const MyHomePage(title: 'Web movie.dart helper'),
     );
   }
 }
@@ -48,6 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Search Request',
                 ),
               ),
+              FlatButton(child: const Text('Serch'), onPressed: (){
+
+              },),
             ],
           ),
         ),
